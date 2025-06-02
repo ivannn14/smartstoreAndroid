@@ -1,0 +1,202 @@
+/* Card Styling */
+.card {
+    border: none;
+    border-radius: 1rem;
+    transition: all 0.3s ease;
+}
+
+/* Search Bar */
+.search-wrapper {
+    position: relative;
+    width: 300px;
+}
+
+.search-wrapper .search-icon {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #adb5bd;
+}
+
+/* Table Styling */
+.table > :not(caption) > * > * {
+    border-bottom-width: 1px;
+    padding: 1rem 1.5rem;
+}
+
+.product-row {
+    transition: all 0.2s ease;
+}
+
+.product-row:hover {
+    background-color: #f8f9fa;
+    transform: translateY(-1px);
+}
+
+/* Product Icon */
+.product-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    background: #f8f9fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #6c757d;
+}
+
+/* Status Badge */
+.status-badge {
+    padding: 6px 12px;
+    border-radius: 50px;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.status-active {
+    background: #e8f5e9;
+    color: #2e7d32;
+}
+
+.status-inactive {
+    background: #ffebee;
+    color: #c62828;
+}
+
+/* Stock Badge */
+.stock-badge {
+    padding: 4px 12px;
+    border-radius: 15px;
+    background: #e9ecef;
+    font-weight: 500;
+}
+
+.stock-badge.low-stock {
+    background: #fff3e0;
+    color: #e65100;
+}
+
+/* Low Stock Button */
+.btn-warning {
+    background-color: #ffc107;
+    border: none;
+    color: #000;
+}
+
+.btn-warning:hover {
+    background-color: #ffb300;
+}
+
+.btn-warning .badge {
+    font-size: 0.75em;
+    padding: 0.35em 0.65em;
+}
+
+/* Empty State */
+.empty-state {
+    padding: 3rem;
+    text-align: center;
+    color: #6c757d;
+}
+
+/* Pagination Styling */
+.pagination {
+    margin-bottom: 0;
+}
+
+.page-link {
+    border: none;
+    padding: 0.5rem 1rem;
+    margin: 0 0.2rem;
+    border-radius: 4px;
+    color: #6c757d;
+}
+
+.page-item.active .page-link {
+    background: #e91e63;
+    color: white;
+}
+
+/* Action Buttons */
+.btn-action {
+    width: 45px;
+    height: 45px;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    font-size: 1.1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-action:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn-action.btn-primary {
+    background: #435ebe;
+    border: none;
+}
+
+.btn-action.btn-primary:hover {
+    background: #364b96;
+}
+
+.btn-action.btn-danger {
+    background: #ff5b5b;
+    border: none;
+}
+
+.btn-action.btn-danger:hover {
+    background: #ff4242;
+}
+
+/* Tooltip */
+.btn-action:before {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px 10px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    font-size: 12px;
+    border-radius: 4px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.2s ease;
+    margin-bottom: 5px;
+}
+
+.btn-action:hover:before {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Alert Animation */
+.alert {
+    animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Spacing */
+.gap-2 {
+    gap: 0.75rem !important;
+}

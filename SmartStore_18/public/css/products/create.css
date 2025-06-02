@@ -1,0 +1,151 @@
+/* Form Controls */
+.form-control, .form-select {
+    border: 1px solid #e9ecef;
+    padding: 0.75rem 1rem;
+    transition: all 0.2s ease;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #e91e63;
+    box-shadow: 0 0 0 0.2rem rgba(233, 30, 99, 0.15);
+}
+
+.input-group-text {
+    border: 1px solid #e9ecef;
+    padding: 0.75rem 1rem;
+}
+
+/* Card Styles */
+.card {
+    border: none;
+    border-radius: 0.75rem;
+    animation: fadeIn 0.5s ease;
+}
+
+.card-header {
+    border-bottom: 1px solid #e9ecef;
+}
+
+.border-start {
+    border-left: 1px solid #e9ecef;
+}
+
+/* Button Styles */
+.create-button {
+    background: #e91e63;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    transform: scale(1);
+}
+
+.create-button:hover {
+    background: #d81557;
+    transform: scale(1.02);
+    box-shadow: 0 5px 15px rgba(233, 30, 99, 0.3);
+}
+
+.create-button:active {
+    transform: scale(0.98);
+}
+
+.cancel-button {
+    background: #f0f0f0;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    color: #666;
+}
+
+.cancel-button:hover {
+    background: #e5e5e5;
+    color: #444;
+    transform: translateY(-1px);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cancel-button:active {
+    transform: translateY(1px);
+}
+
+/* Scanner Styles */
+.viewport {
+    width: 100%;
+    height: 300px;
+    position: relative;
+}
+
+.viewport > video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.drawingBuffer {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#scan-button {
+    background: #e91e63;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+#scan-button:hover {
+    background: #d81557;
+    transform: scale(1.02);
+    box-shadow: 0 5px 15px rgba(233, 30, 99, 0.3);
+}
+
+/* Upload Area Styles */
+.border-dashed {
+    border-style: dashed !important;
+}
+
+.upload-area {
+    transition: all 0.3s ease;
+}
+
+.upload-area:hover {
+    background: #e9ecef;
+    cursor: pointer;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes button-loading {
+    from {
+        transform: rotate(0turn);
+    }
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .border-start {
+        border-left: none;
+        border-top: 1px solid #e9ecef;
+        margin-top: 2rem;
+        padding-top: 2rem;
+    }
+}

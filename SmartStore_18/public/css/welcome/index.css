@@ -1,0 +1,67 @@
+/* Button Animations */
+.animated-btn {
+    transition: all 0.3s ease-in-out;
+    transform: scale(1);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.animated-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.animated-btn:active {
+    transform: scale(0.95);
+}
+
+/* Hero Section */
+.page-header {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Feature Cards */
+.feature-card {
+    transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-icon {
+    transition: all 0.3s ease;
+}
+
+.feature-card:hover .feature-icon {
+    transform: scale(1.1);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fadeIn {
+    animation: fadeIn 0.6s ease-out;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .feature-card {
+        margin-bottom: 1rem;
+    }
+
+    .animated-btn {
+        width: 100%;
+        margin: 0.5rem 0;
+    }
+}

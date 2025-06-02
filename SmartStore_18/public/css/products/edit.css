@@ -1,0 +1,108 @@
+/* Form Controls */
+.form-control, .form-select {
+    border: 1px solid #e9ecef;
+    padding: 0.75rem 1rem;
+    transition: all 0.2s ease;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #435ebe;
+    box-shadow: 0 0 0 0.2rem rgba(67, 94, 190, 0.15);
+}
+
+.input-group-text {
+    border: 1px solid #e9ecef;
+    padding: 0.75rem 1rem;
+}
+
+/* Card Styles */
+.card {
+    border: none;
+    border-radius: 0.75rem;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    border-bottom: 1px solid #e9ecef;
+}
+
+.border-start {
+    border-left: 1px solid #e9ecef;
+}
+
+/* Button Styles */
+.update-button {
+    background: #435ebe;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.update-button:hover {
+    background: #364b96;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(67, 94, 190, 0.3);
+}
+
+.update-button:active {
+    transform: translateY(0);
+}
+
+.cancel-button {
+    background: #f8f9fa;
+    border: none;
+    color: #6c757d;
+    transition: all 0.3s ease;
+}
+
+.cancel-button:hover {
+    background: #e9ecef;
+    color: #495057;
+    transform: translateY(-2px);
+}
+
+/* Form field animations */
+.form-control:focus, .form-select:focus {
+    transform: translateY(-2px);
+    background: white !important;
+}
+
+/* Loading state */
+.update-button.loading {
+    pointer-events: none;
+    position: relative;
+    color: transparent;
+}
+
+.update-button.loading::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    left: 50%;
+    margin: -10px 0 0 -10px;
+    border: 3px solid rgba(255,255,255,0.3);
+    border-radius: 50%;
+    border-top-color: #fff;
+    animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .border-start {
+        border-left: none;
+        border-top: 1px solid #e9ecef;
+        margin-top: 2rem;
+        padding-top: 2rem;
+    }
+}

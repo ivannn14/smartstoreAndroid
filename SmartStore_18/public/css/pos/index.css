@@ -1,0 +1,131 @@
+/* Product Card Styles */
+.product-card {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.product-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #f8f9fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    color: #435ebe;
+}
+
+.product-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Cart Styles */
+.sticky-top {
+    z-index: 1000;
+    top: 20px;
+}
+
+.cart-item {
+    padding: 1rem;
+    border-bottom: 1px solid #e9ecef;
+    animation: slideIn 0.3s ease;
+}
+
+.quantity-control {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.quantity-btn {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: none;
+    background: #f8f9fa;
+    color: #435ebe;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.quantity-btn:hover {
+    background: #e9ecef;
+}
+
+/* Category List Styles */
+.list-group-item {
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border: none;
+    padding: 0.75rem 1rem;
+}
+
+.list-group-item:hover {
+    background-color: #f8f9fa;
+}
+
+.list-group-item.active {
+    background-color: #435ebe;
+    border-color: #435ebe;
+}
+
+/* Search Bar */
+.search-wrapper {
+    position: relative;
+    width: 300px;
+}
+
+.search-icon {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #adb5bd;
+}
+
+/* Payment Section */
+#cash-payment {
+    transition: all 0.3s ease;
+}
+
+.form-select, .form-control {
+    border: 1px solid #e9ecef;
+    padding: 0.75rem 1rem;
+}
+
+/* Animations */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .search-wrapper {
+        width: 100%;
+        margin-top: 1rem;
+    }
+    
+    .sticky-top {
+        position: relative !important;
+        top: 0 !important;
+    }
+}

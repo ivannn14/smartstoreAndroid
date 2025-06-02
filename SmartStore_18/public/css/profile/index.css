@@ -1,0 +1,135 @@
+/* Profile Header */
+.profile-header {
+    transition: transform 0.3s ease-in-out;
+}
+
+.profile-header:hover {
+    transform: translateY(-5px);
+}
+
+/* Avatar Styling */
+.avatar-xl {
+    width: 74px;
+    height: 74px;
+}
+
+/* Profile Cards */
+.profile-card {
+    transition: all 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+.profile-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Statistics Cards */
+.stat-card {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.stat-card:hover {
+    transform: scale(1.05);
+}
+
+/* Info Groups */
+.info-group {
+    background: #f8f9fa;
+    padding: 1rem;
+    border-radius: 0.75rem;
+    transition: all 0.3s ease;
+}
+
+.info-group:hover {
+    background: #fff;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    transform: translateY(-2px);
+}
+
+/* Password Section */
+.password-strength .progress {
+    border-radius: 1rem;
+    background-color: #e9ecef;
+}
+
+.password-strength .progress-bar {
+    border-radius: 1rem;
+    transition: width 0.3s ease;
+}
+
+.password-tips {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+}
+
+.password-tips li {
+    transition: all 0.2s ease;
+}
+
+.password-tips li:hover {
+    transform: translateX(5px);
+}
+
+/* Delete Account Section */
+.warning-icon-circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #fff5f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    animation: pulse 2s infinite;
+}
+
+.delete-btn {
+    transition: all 0.3s ease;
+}
+
+.delete-btn:hover {
+    background-color: #dc3545;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(220, 53, 69, 0.3);
+}
+
+/* Form Controls */
+.form-control {
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    transform: translateY(-2px);
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+/* Animations */
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(220, 53, 69, 0.4);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(220, 53, 69, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(220, 53, 69, 0);
+    }
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

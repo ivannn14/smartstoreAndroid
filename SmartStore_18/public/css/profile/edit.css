@@ -1,0 +1,55 @@
+/* Profile Container */
+.profile-container {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+/* Card Styles */
+.profile-card {
+    padding: 1rem;
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+}
+
+.profile-card:hover {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Section */
+.form-section {
+    max-width: 36rem;
+    margin: 0 auto;
+}
+
+/* Header */
+.profile-header {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1a202c;
+    margin-bottom: 1.5rem;
+}
+
+/* Dark Mode Styles */
+@media (prefers-color-scheme: dark) {
+    .profile-card {
+        background-color: #1f2937;
+    }
+
+    .profile-header {
+        color: #f3f4f6;
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 640px) {
+    .profile-container {
+        padding: 1rem;
+    }
+    
+    .profile-card {
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+}

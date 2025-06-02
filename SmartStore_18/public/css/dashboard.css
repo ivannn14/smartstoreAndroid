@@ -1,0 +1,110 @@
+.card {
+    transition: all 0.3s ease;
+    border: none;
+    box-shadow: 0 2px 15px -3px rgba(0, 0, 0, 0.07), 0 10px 20px -2px rgba(0, 0, 0, 0.04);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card.bg-gradient-light {
+    background: linear-gradient(145deg, #f8f9fa 0%, #ffffff 100%);
+}
+
+.card-stats {
+    background: white;
+    border-radius: 0.75rem;
+}
+
+.card-stats:hover {
+    border-color: #5e72e4 !important;
+}
+
+.shadow-sm {
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075) !important;
+}
+
+.shadow-lg {
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175) !important;
+}
+
+.border {
+    border: 1px solid rgba(0,0,0,.125) !important;
+}
+
+.border-bottom {
+    border-bottom: 1px solid rgba(0,0,0,.125) !important;
+}
+
+.ls-1 {
+    letter-spacing: .1rem;
+}
+
+.icon-shape {
+    width: 48px;
+    height: 48px;
+    background-position: center;
+    border-radius: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.icon-shape:hover {
+    transform: rotate(5deg);
+}
+
+.bg-gradient-primary {
+    background: linear-gradient(150deg, #5e72e4 0%, #825ee4 100%);
+}
+
+.bg-gradient-warning {
+    background: linear-gradient(150deg, #fbb140 0%, #f53939 100%);
+}
+
+.bg-gradient-danger {
+    background: linear-gradient(150deg, #f5365c 0%, #f56036 100%);
+}
+
+.numbers h5 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    background: linear-gradient(150deg, #2152ff, #21d4fd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.chart-canvas {
+    min-height: 300px;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.1));
+}
+
+.list-group-item {
+    transition: all 0.2s ease;
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+    background: linear-gradient(150deg, #ffffff 0%, #f8f9fa 100%);
+}
+
+.list-group-item:hover {
+    transform: translateX(5px);
+    background: linear-gradient(150deg, #ffffff 0%, #e9ecef 100%);
+}
+
+.btn {
+    transition: all 0.3s ease;
+    border-radius: 0.5rem;
+    font-weight: 500;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-select {
+    border-radius: 0.5rem;
+    border: 1px solid #e9ecef;
+}

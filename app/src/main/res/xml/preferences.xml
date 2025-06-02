@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="General Settings">
+        <EditTextPreference
+            android:key="business_name"
+            android:title="Business Name"
+            android:summary="Set your business name"
+            android:defaultValue="" />
+            
+        <EditTextPreference
+            android:key="business_address"
+            android:title="Business Address"
+            android:summary="Set your business address"
+            android:defaultValue="" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Receipt Settings">
+        <SwitchPreferenceCompat
+            android:key="print_receipt"
+            android:title="Auto Print Receipt"
+            android:summary="Automatically print receipt after sale"
+            android:defaultValue="true" />
+
+        <EditTextPreference
+            android:key="receipt_footer"
+            android:title="Receipt Footer"
+            android:summary="Add a message at the bottom of receipts"
+            android:defaultValue="Thank you for your purchase!" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Inventory Settings">
+        <EditTextPreference
+            android:key="low_stock_threshold"
+            android:title="Low Stock Alert"
+            android:summary="Set the minimum quantity for low stock alerts"
+            android:defaultValue="10"
+            android:inputType="number" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Backup &amp; Sync">
+        <SwitchPreferenceCompat
+            android:key="auto_backup"
+            android:title="Auto Backup"
+            android:summary="Automatically backup data daily"
+            android:defaultValue="true" />
+    </PreferenceCategory>
+</PreferenceScreen>

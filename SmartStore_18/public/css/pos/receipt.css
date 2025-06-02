@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+}
+
+.receipt {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.items {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.items th, 
+.items td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.items th {
+    font-weight: bold;
+    background-color: #f8f9fa;
+}
+
+.total-section {
+    margin-top: 20px;
+    text-align: right;
+}
+
+.total-section p {
+    margin: 5px 0;
+}
+
+.total-section strong {
+    font-size: 14px;
+}
+
+.footer {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 10px;
+    border-top: 1px dashed #ddd;
+    padding-top: 15px;
+}
+
+@media print {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .receipt {
+        max-width: none;
+        width: 80mm; /* Standard thermal receipt width */
+    }
+}

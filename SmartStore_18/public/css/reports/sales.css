@@ -1,0 +1,22 @@
+:root {
+    --bg-primary: #ffffff;
+    --bg-card: #f8f9fa;
+    --text-primary: #2d3748;
+    --text-secondary: #4a5568;
+    --card-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    --transition: all 0.3s ease;
+}
+
+/* Card Styling */
+.report-card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: var(--card-shadow);
+    background: #1e1e2d;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+/* All your existing CSS styles... */
+/* Keeping the same styles but moved to a separate file */

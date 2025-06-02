@@ -1,0 +1,149 @@
+/* Page Title and Header */
+.page-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1a1f37;
+    margin-bottom: 0;
+}
+
+.header-title h2.page-title {
+    font-size: 2.25rem;
+    letter-spacing: -0.5px;
+    background: none;
+}
+
+.header-title .text-description {
+    font-size: 1.1rem;
+    color: #4b5563;
+    font-weight: 400;
+    margin: 0;
+    background: none;
+}
+
+/* Navigation */
+.back-btn {
+    transition: all 0.3s ease;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+}
+
+.back-btn:hover {
+    transform: translateX(-5px);
+}
+
+/* Stats Cards */
+.stats-card {
+    background: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 0 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.stats-card:hover {
+    transform: translateY(-5px);
+}
+
+.stats-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.stats-icon i {
+    color: white;
+    font-size: 1.25rem;
+}
+
+.stats-info h4 {
+    font-size: 0.875rem;
+    color: #67748e;
+    margin-bottom: 0.5rem;
+}
+
+.stats-info h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+/* Trends */
+.trend {
+    font-size: 0.875rem;
+    margin: 0;
+}
+
+.trend.positive { color: #2dce89; }
+.trend.negative { color: #f5365c; }
+
+/* Chart Container */
+.chart-container {
+    padding: 1rem;
+    background: #f8f9fa;
+    border-radius: 10px;
+    margin: 1rem 0;
+}
+
+/* Action Buttons */
+.export-btn, .refresh-btn {
+    padding: 0.6rem 1.2rem;
+    font-weight: 500;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.export-btn:hover, .refresh-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+    .page-title,
+    .stats-card,
+    .card,
+    .card-header {
+        background: #1a1f37;
+        color: #fff;
+    }
+
+    .stats-info h4 {
+        color: #a0aec0;
+    }
+
+    .chart-container {
+        background: #1a1f37;
+    }
+
+    .header-title h2.page-title {
+        color: #ffffff;
+    }
+    
+    .header-title .text-description {
+        color: #cbd5e1;
+    }
+
+    .card-header {
+        background: transparent;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-title h2.page-title {
+        font-size: 1.75rem;
+    }
+
+    .stats-card {
+        margin-bottom: 1rem;
+    }
+
+    .chart-container {
+        height: 250px;
+    }
+}

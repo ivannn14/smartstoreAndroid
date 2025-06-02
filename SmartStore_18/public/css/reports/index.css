@@ -1,0 +1,176 @@
+:root {
+    --bg-primary: #ffffff;
+    --bg-card: #f8f9fa;
+    --text-primary: #2d3748;
+    --text-secondary: #4a5568;
+    --card-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Global styles */
+body {
+    background: var(--bg-primary) !important;
+    color: var(--text-primary);
+}
+
+.container-fluid {
+    background: var(--bg-primary);
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* Page Title */
+.page-title {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--text-primary);
+    margin-bottom: 2.5rem;
+    letter-spacing: -0.5px;
+    position: relative;
+    padding: 0.5rem 0;
+    animation: fadeInDown 0.6s ease-out;
+}
+
+/* Report Cards */
+.report-card {
+    background: var(--bg-card);
+    border-radius: 20px;
+    padding: 2.5rem;
+    height: 100%;
+    position: relative;
+    transition: var(--transition);
+    box-shadow: var(--card-shadow);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    animation: fadeInUp 0.6s ease-out;
+    animation-fill-mode: both;
+}
+
+.report-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
+    background: #ffffff;
+}
+
+/* Icon Wrapper */
+.icon-wrapper {
+    width: 70px;
+    height: 70px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+}
+
+.icon-wrapper i {
+    font-size: 1.8rem;
+    color: white;
+}
+
+/* Content */
+.content h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 1.2rem;
+    transition: var(--transition);
+}
+
+.content p {
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+    line-height: 1.7;
+    font-size: 1.1rem;
+}
+
+/* Buttons */
+.btn {
+    padding: 0.9rem 1.8rem;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: var(--transition);
+    border: none;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.btn i {
+    transition: var(--transition);
+    position: relative;
+    top: 1px;
+}
+
+.btn:hover i {
+    transform: translateX(8px);
+}
+
+/* Card Gradients */
+.report-card:nth-child(1) .icon-wrapper {
+    background: linear-gradient(45deg, #ff0080, #7928ca);
+}
+
+.report-card:nth-child(2) .icon-wrapper {
+    background: linear-gradient(45deg, #ff8f00, #ff4e00);
+}
+
+.report-card:nth-child(3) .icon-wrapper {
+    background: linear-gradient(45deg, #00b09b, #96c93d);
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .page-title {
+        font-size: 2.5rem;
+    }
+    
+    .report-card {
+        padding: 2rem;
+        margin-bottom: 1rem;
+    }
+    
+    .content h3 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Theme Support */
+@media (prefers-color-scheme: light) {
+    :root {
+        --bg-primary: #ffffff;
+        --bg-card: #f8f9fa;
+        --text-primary: #2d3748;
+        --text-secondary: #4a5568;
+    }
+}
